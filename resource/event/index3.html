@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/logos/favicon.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        margin: 0px;
+        margin-top: 8px;
+      }
+      .b img {
+        padding-top: 20px;
+        display: block;
+        margin: 0px auto;
+      }
+
+      .a {
+        display: block;
+        margin: 0px auto;
+        width: 312px;
+        padding-bottom: 16px;
+      }
+
+      #container {
+        width: 310px;
+        display: flex;
+        margin: 0px auto;
+      }
+
+      #text {
+        margin: 0px auto;
+        background-color: #f6f6f6;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      #kr-text {
+        margin-right: 12px;
+        /* margin-left: 24px; */
+        color: #06b6d4;
+        font-size: 13px;
+        font-weight: 700;
+        word-break: keep-all;
+      }
+    </style>
+    <title>Yollet</title>
+  </head>
+
+  <body>
+    <div class="a">
+      <img src="images/text_image.png" alt="" />
+      <br />
+    </div>
+    <div id="text">
+      <div id="container">
+        <p id="kr-text">공지</p>
+        <div id="web-ticker">
+          <li>빅스페이는 거래소의 10분간 시세를 집계하여 계산됩니다. 기준 시세는 "더보기 > 기준시세" 에서 확인하실 수 있습니다.</li>
+        </div>
+      </div>
+    </div>
+    <div class="b">
+      <img src="images/main_image.png" alt="" />
+      <br />
+    </div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./script/jquery.webticker.min.js"></script>
+  <script>
+    $("#web-ticker").webTicker({
+      height: "46px",
+      hoverpause: false,
+    });
+    ticker.settings();
+  </script>
+</html>
